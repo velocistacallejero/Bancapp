@@ -12,16 +12,27 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
         <link  href="{{asset('css/cajero.css') }} " rel="stylesheet" >
+        <link rel="stylesheet" href="{{ asset('post-inicio.css') }}">
+      
+        
 
        
     </head>
     <body class="antialiased">
+    <header>
+        <h2>BancApp</h2>
+        <nav class="nav-iconos">
+            <h6>Cuenta</h6>
+            <img href="#" src="usuario.png" style="width: 30px" class="notificacion">
+            <img href="#" src="notificacion1.png" style="width:30px" alt="Notificación" class="notificacion">
+        </nav>
+    </header>
         <!-- desde aqui -->
         <div class="container">
         <!-- Barra lateral -->
         <div class="barra sidebar">
             <div class="imagen">
-            <img src="https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg" class="rounded-circle" style="width: 150px;"
+            <img  src="{{ asset('/img/3d_avatar_1.png') }}" class="rounded-circle notificacion" style="width: 150px;"
   alt="Avatar" />
             </div>
             <div onclick="window.location.href='{{route('cajero')}}'" class="sidebar-item">
